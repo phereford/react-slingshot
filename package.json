@@ -16,7 +16,7 @@
     "prebuild": "npm run clean-dist && npm run build:html && npm run build:sass",
     "build": "npm run build:verbose -- -s",
     "build:verbose": "node tools/build.js",
-    "test": "cross-env NODE_ENV=test mocha --watch --reporter progress --compilers js:babel/register --recursive \"./src/**/*.spec.js\""
+    "test": "cross-env NODE_ENV=test mocha --watch --reporter progress --compilers js:babel/register --recursive \"./web/static/js/**/*.spec.js\""
   },
   "author": "Cory House",
   "license": "MIT",

@@ -9,7 +9,7 @@ var cheerio = require('cheerio');
 var useTrackJs = true; //If you choose not to use TrackJS, just set this to false and the build warning will go away.
 var trackJsToken = ''; //If you choose to use TrackJS, insert your unique token here. To get a token, go to https://trackjs.com
 
-fs.readFile('src/index.html', 'utf8', function (err,data) {
+fs.readFile('web/static/index.html', 'utf8', function (err,data) {
   if (err) {
     return console.log(err.bold.red);
   }
